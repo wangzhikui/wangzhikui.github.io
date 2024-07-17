@@ -351,27 +351,29 @@
   </entry>
   
   <entry>
-    <title>阅读分享2019-01-17（六篇）</title>
-    <link href="http://wangzhikui.com/2019/01/17/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB2/"/>
-    <id>http://wangzhikui.com/2019/01/17/阅读分享2/</id>
+    <title>如何选择开源协议</title>
+    <link href="http://wangzhikui.com/2019/01/17/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://wangzhikui.com/2019/01/17/如何选择开源协议/</id>
     <published>2019-01-16T16:00:00.000Z</published>
-    <updated>2020-06-12T07:05:45.410Z</updated>
+    <updated>2020-06-12T07:05:45.406Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理"><a href="#从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理" class="headerlink" title="从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理"></a><a href="https://segmentfault.com/a/1190000012925872#articleHeader15" target="_blank" rel="noopener">从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理</a></h2><h2 id="待-2019-年值得学习的顶级-JavaScript-框架与主题"><a href="#待-2019-年值得学习的顶级-JavaScript-框架与主题" class="headerlink" title="(待)2019 年值得学习的顶级 JavaScript 框架与主题"></a>(待)<a href="https://juejin.im/post/5c3cbb91e51d4550932771ce" target="_blank" rel="noopener">2019 年值得学习的顶级 JavaScript 框架与主题</a></h2><h2 id="待-从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！"><a href="#待-从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！" class="headerlink" title="(待)从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！"></a>(待)<a href="http://www.dailichun.com/2018/03/12/whenyouenteraurl.html" target="_blank" rel="noopener">从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！</a></h2><h2 id="待-Tasks-microtasks-queues-and-schedules"><a href="#待-Tasks-microtasks-queues-and-schedules" class="headerlink" title="(待)Tasks, microtasks, queues and schedules"></a>(待)<a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/" target="_blank" rel="noopener">Tasks, microtasks, queues and schedules</a></h2><h2 id="2018年JavaScript生态圈调查报告出炉！"><a href="#2018年JavaScript生态圈调查报告出炉！" class="headerlink" title="2018年JavaScript生态圈调查报告出炉！"></a><a href="https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247489926&amp;idx=1&amp;sn=85d30069ef6bc315f36685569dc7445d&amp;chksm=f951acc5ce2625d3eddaddb170a42610dfc9b340965b00d2bd2008593c7124720803d250300a&amp;mpshare=1&amp;scene=1&amp;srcid=0115pfPYRwcMqUWPaHlSSW7o#rd" target="_blank" rel="noopener">2018年JavaScript生态圈调查报告出炉！</a></h2><h2 id="GitHub年度盘点：Deno赶超Node，跃升第四！"><a href="#GitHub年度盘点：Deno赶超Node，跃升第四！" class="headerlink" title="GitHub年度盘点：Deno赶超Node，跃升第四！"></a><a href="https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247490270&amp;idx=1&amp;sn=59e786008d6bba785c37dd355006e887&amp;chksm=f951af9dce26268bcffff0b936d2a9a1bc0fe990cb6ee6e3792d2ae80c1f51d89a2c9b93d1d2&amp;mpshare=1&amp;scene=1&amp;srcid=0115xmCvY2UT8sYW6ckgAYav#rd" target="_blank" rel="noopener">GitHub年度盘点：Deno赶超Node，跃升第四！</a></h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="如何为代码选择开源许可证，这是一个问题"><a href="#如何为代码选择开源许可证，这是一个问题" class="headerlink" title="如何为代码选择开源许可证，这是一个问题"></a><font color="green">如何为代码选择开源许可证，这是一个问题</font></h1><p>世界上的开源许可证，大概有上百种。很少有人搞得清楚它们的区别。即使在最流行的六种</p><p><a href="http://www.gnu.org/licenses/gpl.html" target="_blank" rel="noopener">GPL</a><br><a href="http://en.wikipedia.org/wiki/BSD_licenses" target="_blank" rel="noopener">BSD</a><br><a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">MIT</a><br><a href="http://www.mozilla.org/MPL/" target="_blank" rel="noopener">Mozilla</a><br><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache</a><br><a href="http://www.gnu.org/copyleft/lesser.html" target="_blank" rel="noopener">LGPL</a></p><p>之中做选择，也很复杂。</p><p>乌克兰程序员Paul Bagwell，画了一张分析图</p><p>阮一峰对该图做了翻译</p><p>以下也收集了网上几张经典的开源协议图</p><h1 id="开源协议英文版-Paul-Bagwell"><a href="#开源协议英文版-Paul-Bagwell" class="headerlink" title="开源协议英文版-Paul Bagwell"></a><font color="green">开源协议英文版-Paul Bagwell</font></h1><p><img src="/images/开源协议英文.png" alt=""></p><h1 id="开源协议中文版-阮一峰翻译版"><a href="#开源协议中文版-阮一峰翻译版" class="headerlink" title="开源协议中文版-阮一峰翻译版"></a><font color="green">开源协议中文版-阮一峰翻译版</font></h1><p><img src="/images/开源协议中文.png" alt=""></p><h1 id="开源协议中文版-网络"><a href="#开源协议中文版-网络" class="headerlink" title="开源协议中文版-网络"></a><font color="green">开源协议中文版-网络</font></h1><p><img src="/images/开源协议中文1.png" alt=""></p><h1 id="开源协议英文版-网络"><a href="#开源协议英文版-网络" class="headerlink" title="开源协议英文版-网络"></a><font color="green">开源协议英文版-网络</font></h1><p><img src="/images/开源协议英文1.png" alt=""></p><h1 id="reference"><a href="#reference" class="headerlink" title="reference"></a><font color="green">reference</font></h1><p><a href="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot;&gt;&lt;a href=&quot;#从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot; class=&quot;headerlink&quot; title=&quot;从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot;&gt;&lt;/a&gt;&lt;a
+        &lt;h1 id=&quot;如何为代码选择开源许可证，这是一个问题&quot;&gt;&lt;a href=&quot;#如何为代码选择开源许可证，这是一个问题&quot; class=&quot;headerlink&quot; title=&quot;如何为代码选择开源许可证，这是一个问题&quot;&gt;&lt;/a&gt;&lt;font color=&quot;green&quot;&gt;如何为代码选择开源
       
     
     </summary>
     
-      <category term="阅读分享" scheme="http://wangzhikui.com/categories/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
+      <category term="笔记" scheme="http://wangzhikui.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="阅读分享" scheme="http://wangzhikui.com/tags/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
+      <category term="笔记" scheme="http://wangzhikui.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="开源" scheme="http://wangzhikui.com/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   
@@ -402,56 +404,27 @@
   </entry>
   
   <entry>
-    <title>如何选择开源协议</title>
-    <link href="http://wangzhikui.com/2019/01/17/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://wangzhikui.com/2019/01/17/如何选择开源协议/</id>
+    <title>阅读分享2019-01-17（六篇）</title>
+    <link href="http://wangzhikui.com/2019/01/17/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB2/"/>
+    <id>http://wangzhikui.com/2019/01/17/阅读分享2/</id>
     <published>2019-01-16T16:00:00.000Z</published>
-    <updated>2020-06-12T07:05:45.406Z</updated>
+    <updated>2020-06-12T07:05:45.410Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="如何为代码选择开源许可证，这是一个问题"><a href="#如何为代码选择开源许可证，这是一个问题" class="headerlink" title="如何为代码选择开源许可证，这是一个问题"></a><font color="green">如何为代码选择开源许可证，这是一个问题</font></h1><p>世界上的开源许可证，大概有上百种。很少有人搞得清楚它们的区别。即使在最流行的六种</p><p><a href="http://www.gnu.org/licenses/gpl.html" target="_blank" rel="noopener">GPL</a><br><a href="http://en.wikipedia.org/wiki/BSD_licenses" target="_blank" rel="noopener">BSD</a><br><a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">MIT</a><br><a href="http://www.mozilla.org/MPL/" target="_blank" rel="noopener">Mozilla</a><br><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache</a><br><a href="http://www.gnu.org/copyleft/lesser.html" target="_blank" rel="noopener">LGPL</a></p><p>之中做选择，也很复杂。</p><p>乌克兰程序员Paul Bagwell，画了一张分析图</p><p>阮一峰对该图做了翻译</p><p>以下也收集了网上几张经典的开源协议图</p><h1 id="开源协议英文版-Paul-Bagwell"><a href="#开源协议英文版-Paul-Bagwell" class="headerlink" title="开源协议英文版-Paul Bagwell"></a><font color="green">开源协议英文版-Paul Bagwell</font></h1><p><img src="/images/开源协议英文.png" alt=""></p><h1 id="开源协议中文版-阮一峰翻译版"><a href="#开源协议中文版-阮一峰翻译版" class="headerlink" title="开源协议中文版-阮一峰翻译版"></a><font color="green">开源协议中文版-阮一峰翻译版</font></h1><p><img src="/images/开源协议中文.png" alt=""></p><h1 id="开源协议中文版-网络"><a href="#开源协议中文版-网络" class="headerlink" title="开源协议中文版-网络"></a><font color="green">开源协议中文版-网络</font></h1><p><img src="/images/开源协议中文1.png" alt=""></p><h1 id="开源协议英文版-网络"><a href="#开源协议英文版-网络" class="headerlink" title="开源协议英文版-网络"></a><font color="green">开源协议英文版-网络</font></h1><p><img src="/images/开源协议英文1.png" alt=""></p><h1 id="reference"><a href="#reference" class="headerlink" title="reference"></a><font color="green">reference</font></h1><p><a href="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;如何为代码选择开源许可证，这是一个问题&quot;&gt;&lt;a href=&quot;#如何为代码选择开源许可证，这是一个问题&quot; class=&quot;headerlink&quot; title=&quot;如何为代码选择开源许可证，这是一个问题&quot;&gt;&lt;/a&gt;&lt;font color=&quot;green&quot;&gt;如何为代码选择开源
-      
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://wangzhikui.com/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="笔记" scheme="http://wangzhikui.com/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="开源" scheme="http://wangzhikui.com/tags/%E5%BC%80%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac中连接mysql常见错误</title>
-    <link href="http://wangzhikui.com/2019/01/16/mac%E4%B8%AD%E8%BF%9E%E6%8E%A5mysql%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
-    <id>http://wangzhikui.com/2019/01/16/mac中连接mysql常见错误/</id>
-    <published>2019-01-15T16:00:00.000Z</published>
-    <updated>2020-06-12T07:05:45.397Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a><font color="green">问题描述</font></h1><h2 id="Navicat连接本地数据库报错"><a href="#Navicat连接本地数据库报错" class="headerlink" title="Navicat连接本地数据库报错"></a><font color="green">Navicat连接本地数据库报错</font></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navicat for mysql[Mac]解决Can&apos;t connect to MySQL server on &apos;127.0.0.1&apos;(61 &quot;Connection refused&quot;)</span><br></pre></td></tr></table></figure><p><img src="/images/mysql1.png" alt=""></p><h1 id="处理过程"><a href="#处理过程" class="headerlink" title="处理过程"></a><font color="green">处理过程</font></h1><p>网上找了很多方法都没有解决，应该是场景不一样。</p><h2 id="步骤一：查看mysql服务是否启动（发现没有启动）"><a href="#步骤一：查看mysql服务是否启动（发现没有启动）" class="headerlink" title="步骤一：查看mysql服务是否启动（发现没有启动）"></a>步骤一：查看mysql服务是否启动（发现没有启动）</h2><h2 id="步骤二：启动mysql服务（启动报错）"><a href="#步骤二：启动mysql服务（启动报错）" class="headerlink" title="步骤二：启动mysql服务（启动报错）"></a>步骤二：启动mysql服务（启动报错）</h2><p>执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server start</span><br></pre></td></tr></table></figure></p><p>启动过程报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR! The server quit without updating PID file (/usr/local/mysql/data/bogon.pid).</span><br></pre></td></tr></table></figure></p><h2 id="步骤三：处理启动mysql服务报错问题"><a href="#步骤三：处理启动mysql服务报错问题" class="headerlink" title="步骤三：处理启动mysql服务报错问题"></a>步骤三：处理启动mysql服务报错问题</h2><p>同样的网上找了很多问题也没发现原因，无意间点开mac上的mysql控制面板<br><img src="/images/mysql2.png" alt=""><br>看到一条很有用的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“Warning:The /usr/local/mysql/data directory is not owned by the &apos;mysql&apos; or &apos;_mysql&apos; ”</span><br></pre></td></tr></table></figure></p><p>修改权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R mysql /usr/local/mysql/data</span><br><span class="line">sudo /usr/local/mysql/support-files/mysql.server start</span><br></pre></td></tr></table></figure></p><p>启动正常</p><h2 id="步骤四：再次使用Navicat连接（成功）"><a href="#步骤四：再次使用Navicat连接（成功）" class="headerlink" title="步骤四：再次使用Navicat连接（成功）"></a>步骤四：再次使用Navicat连接（成功）</h2><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a><font color="green">补充</font></h1><p>停止MySQL服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server stop</span><br></pre></td></tr></table></figure></p><p>重启MySQL服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server restart</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理"><a href="#从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理" class="headerlink" title="从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理"></a><a href="https://segmentfault.com/a/1190000012925872#articleHeader15" target="_blank" rel="noopener">从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理</a></h2><h2 id="待-2019-年值得学习的顶级-JavaScript-框架与主题"><a href="#待-2019-年值得学习的顶级-JavaScript-框架与主题" class="headerlink" title="(待)2019 年值得学习的顶级 JavaScript 框架与主题"></a>(待)<a href="https://juejin.im/post/5c3cbb91e51d4550932771ce" target="_blank" rel="noopener">2019 年值得学习的顶级 JavaScript 框架与主题</a></h2><h2 id="待-从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！"><a href="#待-从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！" class="headerlink" title="(待)从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！"></a>(待)<a href="http://www.dailichun.com/2018/03/12/whenyouenteraurl.html" target="_blank" rel="noopener">从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！</a></h2><h2 id="待-Tasks-microtasks-queues-and-schedules"><a href="#待-Tasks-microtasks-queues-and-schedules" class="headerlink" title="(待)Tasks, microtasks, queues and schedules"></a>(待)<a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/" target="_blank" rel="noopener">Tasks, microtasks, queues and schedules</a></h2><h2 id="2018年JavaScript生态圈调查报告出炉！"><a href="#2018年JavaScript生态圈调查报告出炉！" class="headerlink" title="2018年JavaScript生态圈调查报告出炉！"></a><a href="https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247489926&amp;idx=1&amp;sn=85d30069ef6bc315f36685569dc7445d&amp;chksm=f951acc5ce2625d3eddaddb170a42610dfc9b340965b00d2bd2008593c7124720803d250300a&amp;mpshare=1&amp;scene=1&amp;srcid=0115pfPYRwcMqUWPaHlSSW7o#rd" target="_blank" rel="noopener">2018年JavaScript生态圈调查报告出炉！</a></h2><h2 id="GitHub年度盘点：Deno赶超Node，跃升第四！"><a href="#GitHub年度盘点：Deno赶超Node，跃升第四！" class="headerlink" title="GitHub年度盘点：Deno赶超Node，跃升第四！"></a><a href="https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&amp;mid=2247490270&amp;idx=1&amp;sn=59e786008d6bba785c37dd355006e887&amp;chksm=f951af9dce26268bcffff0b936d2a9a1bc0fe990cb6ee6e3792d2ae80c1f51d89a2c9b93d1d2&amp;mpshare=1&amp;scene=1&amp;srcid=0115xmCvY2UT8sYW6ckgAYav#rd" target="_blank" rel="noopener">GitHub年度盘点：Deno赶超Node，跃升第四！</a></h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;&lt;font color=&quot;green&quot;&gt;问题描述&lt;/font&gt;&lt;/h1&gt;&lt;h2 id=&quot;Navicat连接本地数据库报错&quot;&gt;&lt;a href=&quot;#Na
+        &lt;h2 id=&quot;从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot;&gt;&lt;a href=&quot;#从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot; class=&quot;headerlink&quot; title=&quot;从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理&quot;&gt;&lt;/a&gt;&lt;a
       
     
     </summary>
     
-      <category term="mysql" scheme="http://wangzhikui.com/categories/mysql/"/>
+      <category term="阅读分享" scheme="http://wangzhikui.com/categories/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="mac" scheme="http://wangzhikui.com/tags/mac/"/>
-    
-      <category term="mysql" scheme="http://wangzhikui.com/tags/mysql/"/>
+      <category term="阅读分享" scheme="http://wangzhikui.com/tags/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -479,6 +452,33 @@
       <category term="笔记" scheme="http://wangzhikui.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="sql" scheme="http://wangzhikui.com/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac中连接mysql常见错误</title>
+    <link href="http://wangzhikui.com/2019/01/16/mac%E4%B8%AD%E8%BF%9E%E6%8E%A5mysql%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
+    <id>http://wangzhikui.com/2019/01/16/mac中连接mysql常见错误/</id>
+    <published>2019-01-15T16:00:00.000Z</published>
+    <updated>2020-06-12T07:05:45.397Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a><font color="green">问题描述</font></h1><h2 id="Navicat连接本地数据库报错"><a href="#Navicat连接本地数据库报错" class="headerlink" title="Navicat连接本地数据库报错"></a><font color="green">Navicat连接本地数据库报错</font></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navicat for mysql[Mac]解决Can&apos;t connect to MySQL server on &apos;127.0.0.1&apos;(61 &quot;Connection refused&quot;)</span><br></pre></td></tr></table></figure><p><img src="/images/mysql1.png" alt=""></p><h1 id="处理过程"><a href="#处理过程" class="headerlink" title="处理过程"></a><font color="green">处理过程</font></h1><p>网上找了很多方法都没有解决，应该是场景不一样。</p><h2 id="步骤一：查看mysql服务是否启动（发现没有启动）"><a href="#步骤一：查看mysql服务是否启动（发现没有启动）" class="headerlink" title="步骤一：查看mysql服务是否启动（发现没有启动）"></a>步骤一：查看mysql服务是否启动（发现没有启动）</h2><h2 id="步骤二：启动mysql服务（启动报错）"><a href="#步骤二：启动mysql服务（启动报错）" class="headerlink" title="步骤二：启动mysql服务（启动报错）"></a>步骤二：启动mysql服务（启动报错）</h2><p>执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server start</span><br></pre></td></tr></table></figure></p><p>启动过程报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR! The server quit without updating PID file (/usr/local/mysql/data/bogon.pid).</span><br></pre></td></tr></table></figure></p><h2 id="步骤三：处理启动mysql服务报错问题"><a href="#步骤三：处理启动mysql服务报错问题" class="headerlink" title="步骤三：处理启动mysql服务报错问题"></a>步骤三：处理启动mysql服务报错问题</h2><p>同样的网上找了很多问题也没发现原因，无意间点开mac上的mysql控制面板<br><img src="/images/mysql2.png" alt=""><br>看到一条很有用的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“Warning:The /usr/local/mysql/data directory is not owned by the &apos;mysql&apos; or &apos;_mysql&apos; ”</span><br></pre></td></tr></table></figure></p><p>修改权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R mysql /usr/local/mysql/data</span><br><span class="line">sudo /usr/local/mysql/support-files/mysql.server start</span><br></pre></td></tr></table></figure></p><p>启动正常</p><h2 id="步骤四：再次使用Navicat连接（成功）"><a href="#步骤四：再次使用Navicat连接（成功）" class="headerlink" title="步骤四：再次使用Navicat连接（成功）"></a>步骤四：再次使用Navicat连接（成功）</h2><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a><font color="green">补充</font></h1><p>停止MySQL服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server stop</span><br></pre></td></tr></table></figure></p><p>重启MySQL服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /usr/local/mysql/support-files/mysql.server restart</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;&lt;font color=&quot;green&quot;&gt;问题描述&lt;/font&gt;&lt;/h1&gt;&lt;h2 id=&quot;Navicat连接本地数据库报错&quot;&gt;&lt;a href=&quot;#Na
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://wangzhikui.com/categories/mysql/"/>
+    
+    
+      <category term="mac" scheme="http://wangzhikui.com/tags/mac/"/>
+    
+      <category term="mysql" scheme="http://wangzhikui.com/tags/mysql/"/>
     
   </entry>
   
